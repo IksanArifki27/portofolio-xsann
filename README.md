@@ -1,13 +1,6 @@
-# 🖥️ Personal Portfolio — mamskie
+# 🖥️ Personal Portfolio — iksan arifki
 
-This repository contains the source code and configurations for the personal portfolio website of **M. Khotibul Umam** (aka _mamskie_), an Information Systems graduate and self-taught developer.
-
----
-
-## 💡 About Me
-
-Hi! I'm Khotibul Umam (_mamskie_), an Information Systems graduate passionate about web development, IT management, and system integration. I love learning independently and solving problems creatively.  
-This portfolio was built to showcase my work, technical skills, and personal projects. Check it out at [mamskie.me](https://mamskie.me/?utm_source=github-readme).
+This repository contains the source code and configurations for the personal portfolio website of **M. iksan arifki** an Information Enginner graduate and self-taught developer.
 
 ---
 
@@ -22,46 +15,13 @@ This portfolio was built to showcase my work, technical skills, and personal pro
 
 Experience the interactive terminal-style portfolio at:
 
-> [https://mamskie.me](https://mamskie.me)
-
----
-
-## 🛠️ Built With
-
-- **Next.js** + **TypeScript** — modern web framework
-- **Vite**, **Styled Components**, **Tailwind CSS**, **SCSS** — for styling and bundling
-- **Firebase** — used for authentication & guestbook (optional)
-- Developer tools:  
-  `.eslintrc.json`, `.prettierrc.json`, Husky, commitlint, GitHub Actions
-
----
+>
 
 ## 🧩 Key Features
 
 - **Terminal‑Style Portfolio**: unique command-line interface theme
 - **Light & Dark Mode Support**
 - **Responsive Design** for all screen sizes
-- **Guestbook / Contact Form** for interaction (optional)
-- **CI/CD Deployment** to Firebase Hosting or Vercel
-
----
-
-## 🚀 Getting Started Locally
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/mamskie/portofolio.git
-   cd portofolio
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Run the development server:
-   ```bash
-   npm run dev
-   ```
-4. Open `http://localhost:3000` in your browser
 
 ---
 
@@ -80,29 +40,6 @@ Feel free to open issues for bugs or feature requests. For pull requests, please
 This project is licensed under the **GPL‑3.0 License**. See [LICENSE](LICENSE) for more information.
 
 ---
-
-## 🔗 Related Links
-
-- Main website & blog: [mamskie.me](https://mamskie.me)
-- Projects:  
-  [Terminal Portfolio](https://mamskie.me/projects/terminal-portfolio)  
-  [Daily Ramadhan](https://mamskie.me/projects/daily-ramadhan)  
-  [URL Shortener](https://mamskie.me/projects/url-shortener)
-- Contact: `khotib.bul@gmail.com`
-
----
-
-## 💭 Roadmap
-
-- Add animated command transitions
-- Integrate a fully functional contact form
-- Add more themes and customization options
-- Improve testing and documentation
-
----
-
-> “Terminal Portfolio is a unique and engaging way to demonstrate your skills… a retro and modern fusion.”  
-> — [mamskie.me/projects/terminal-portfolio](https://www.mamskie.me/projects/terminal-portfolio)
 
 ---
 
