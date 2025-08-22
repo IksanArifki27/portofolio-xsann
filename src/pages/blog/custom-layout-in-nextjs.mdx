@@ -1,0 +1,107 @@
+import Banner from '/public/assets/blog/custom-layout-in-nextjs/banner.jpg';
+import { ContentLayout } from '@components/layout/content-layout';
+import { getContentSlug } from '@lib/mdx';
+
+export const meta = {
+  title: 'Integrasi Firebase Authentication dengan GitHub',
+  publishedAt: '2025-05-23',
+  banner: Banner,
+  bannerAlt: 'Photo by Milad Fakurian on Unsplash',
+  bannerLink: 'https://unsplash.com/photos/N_nbhTHtmYg',
+  description:
+    'Panduan lengkap mengintegrasikan Firebase Authentication menggunakan GitHub Sign-In di aplikasi Anda.',
+  tags: 'firebase, auth, github'
+};
+
+export const getStaticProps = getContentSlug('blog', 'custom-layout-in-nextjs');
+
+export default ({ children }) => (
+  <ContentLayout meta={meta}>{children}</ContentLayout>
+);
+
+{/* content start */}
+
+## 🔐 Tutorial: Integrasi Firebase Authentication dengan GitHub
+
+### 1. **Aktifkan GitHub Authentication di Firebase Console**
+
+1. Masuk ke [Firebase Console](https://console.firebase.google.com/).
+2. Pilih proyek Anda.
+3. Navigasi ke **Authentication** > **Sign-in method**.
+4. Klik **GitHub** dan aktifkan metode sign-in.
+5. Masukkan **Client ID** dan **Client Secret** dari aplikasi GitHub Anda.
+6. Simpan perubahan.
+
+> **Catatan:** Untuk mendapatkan Client ID dan Client Secret, Anda perlu mendaftarkan aplikasi Anda di [GitHub Developer Settings](https://github.com/settings/developers). Tambahkan URL pengalihan Firebase (`https://your-project-id.firebaseapp.com/__/auth/handler`) sebagai **Authorization callback URL**.
+
+### 2. **Tambahkan Firebase SDK ke Proyek Anda**
+
+Instal Firebase SDK menggunakan npm:
+
+```bash
+npm install firebase
+```
+
+Atau, jika Anda menggunakan CDN:
+
+```html
+<script src="https://www.gstatic.com/firebasejs/9.6.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.4/firebase-auth.js"></script>
+```
+
+### 3. **Inisialisasi Firebase di Aplikasi Anda**
+
+```js
+// firebase.js
+import { initializeApp } from 'firebase/app';
+import { getAuth } from 'firebase/auth';
+
+const firebaseConfig = {
+  apiKey: 'YOUR_API_KEY',
+  authDomain: 'your-project-id.firebaseapp.com',
+  projectId: 'your-project-id',
+  storageBucket: 'your-project-id.appspot.com',
+  messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
+  appId: 'YOUR_APP_ID'
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+
+export { auth };
+```
+
+### 4. **Implementasikan Fungsi Sign-In dengan GitHub**
+
+```js
+import { GithubAuthProvider, signInWithPopup } from 'firebase/auth';
+import { auth } from './firebase';
+
+const provider = new GithubAuthProvider();
+
+function signInWithGitHub() {
+  signInWithPopup(auth, provider)
+    .then((result) => {
+      const user = result.user;
+      console.log('User Info:', user);
+    })
+    .catch((error) => {
+      console.error('Error during sign-in:', error.message);
+    });
+}
+```
+
+### 5. **Tambahkan Tombol Sign-In di Antarmuka Pengguna**
+
+```html
+<button onclick="signInWithGitHub()">Sign in with GitHub</button>
+```
+
+### 6. **Tambahkan Domain ke Firebase Authorized Domains**
+
+1. Buka **Authentication** > **Settings** di Firebase Console.
+2. Tambahkan domain Anda (misalnya `your-app.vercel.app`) ke daftar **Authorized domains**.
+
+---
+
+Dengan langkah-langkah ini, Anda telah berhasil mengaktifkan GitHub Authentication menggunakan Firebase. Langkah selanjutnya bisa melibatkan pengamanan API, integrasi database, atau tampilan pengguna pasca-login.

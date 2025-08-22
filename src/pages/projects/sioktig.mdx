@@ -1,0 +1,80 @@
+import Banner from '/public/assets/projects/sioktig.png';
+import { ContentLayout } from '@components/layout/content-layout';
+import { getContentSlug } from '@lib/mdx';
+
+export const meta = {
+  title: 'Health and Safety Management Information System',
+  publishedAt: '2023-02-11',
+  banner: Banner,
+  description:
+    'The web-based Occupational Health and Safety Management Information System (SIM K3) is a digital platform designed to efficiently manage and monitor all aspects of K3 in a company.',
+  tags: 'laravel,mysql,javascript,bootstrap',
+  category: 'Personal Project',
+  github: 'https://github.com/mamskie/daily-ramadhan'
+};
+
+export const getStaticProps = getContentSlug('projects', 'sioktig');
+
+export default ({ children }) => (
+  <ContentLayout meta={meta}>{children}</ContentLayout>
+);
+
+{/* content start */}
+
+## Overview
+
+**Occupational Health and Safety (OHS) Information Systemn** is a web-based application designed to simplify the management of Occupational Health and Safety (OHS) data within a company or organization. This application provides various features for monitoring, managing, and documenting OHS-related activities and reports..
+
+<div className='flex flex-wrap gap-2'>
+  <img
+    src='https://img.shields.io/badge/Laravel-%23FF2D20.svg?logo=laravel&logoColor=white'
+    alt='Laravel'
+  />
+  <img
+    src='https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=fff'
+    alt='Bootstrap'
+  />
+  <img
+    src='https://img.shields.io/badge/Postman-FF6C37?logo=postman&logoColor=white'
+    alt='Postman'
+  />
+  <img
+    src='https://img.shields.io/badge/jQuery-0769AD?logo=jquery&logoColor=fff'
+    alt='Jquery'
+  />
+  <img
+    src='https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000'
+    alt='Javascript'
+  />
+
+</div>
+
+## The Tech Stack
+
+This application was built using:
+
+- **Laravel** for Framework building the application system
+- **Mysql** for static database system
+- **Bootstrap** for rapid styling and responsiveness
+- **Postman** for Cheking end point API
+- **Jquery** for makes it easier to manipulate the DOM
+
+## Features
+
+- 🖥️ **recording and monitoring data,** (Shubuh, Dzuhr, Ashr, Maghrib, Isya, Tarawih)
+- 📈 **Dashboard
+  Displays important information**
+- 📚 **Generates reports related to OHS incidents and activities**
+- 👥 **User Management** to persist data on the user's device
+- ⚠️ **Automatic notifications about inspection**
+- 🌐 **System Integration Integration with other systems**
+- 📱 **Fully Responsive Design**
+- 🔐 **User Authentication** (Sign Up & Sign In)
+
+## Conclusion
+
+**Health and Safety Management Information System** is a meaningful project that allowed me to combine design, development, and faith. It helped me practice good UI/UX design and learn to build a self-contained app with modern tools.
+
+🛠️ View the code on [GitHub](https://github.com/IksanArifki27/Sistem_informasi_K3)
+
+Thank you for exploring this project!

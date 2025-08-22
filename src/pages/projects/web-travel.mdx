@@ -1,0 +1,81 @@
+import Banner from '/public/assets/projects/webwisata.png';
+import { ContentLayout } from '@components/layout/content-layout';
+import { getContentSlug } from '@lib/mdx';
+
+export const meta = {
+  title: 'Tourist Information System',
+  publishedAt: '2022-02-07',
+  banner: Banner,
+  description:
+    'A web-based application designed to provide comprehensive information about tourist attractions in Batu City, East Java. This application allows users to search ',
+  tags: 'nodejs,javascript,bootstrap,mysql',
+  category: 'Personal Project',
+  github: 'https://github.com/IksanArifki27/destinasi_batu',
+
+};
+
+export const getStaticProps = getContentSlug('projects', 'web-travel');
+
+export default ({ children }) => (
+  <ContentLayout meta={meta}>{children}</ContentLayout>
+);
+
+{/* content start */}
+
+## Overview
+
+**Tourist Information System** A web-based application designed to provide comprehensive information about tourist attractions in Batu City, East Java. This application allows users to search and obtain details about various tourist destinations, available facilities, and provides the latest information on destinations in Batu..
+
+<div className='flex flex-wrap gap-2'>
+  <img
+    src='https://img.shields.io/badge/Express.js-%23404d59.svg?logo=express&logoColor=%2361DAFB'
+    alt='Expressjs'
+  />
+  <img
+    src='https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=fff'
+    alt='Bootstrap'
+  />
+
+  <img
+    src='https://img.shields.io/badge/jQuery-0769AD?logo=jquery&logoColor=fff'
+    alt='Jquery'
+  />
+  <img
+    src='https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000'
+    alt='Javascript'
+  />
+</div>
+
+## The Tech Stack
+
+This application was built using:
+
+- **Javascript** for used to communicate with the server without reloading the page
+- **ExpressJs** for backend server
+- **Mysql** for database system
+- **Bootstrap** for for user interface visual
+
+## Features
+
+- 📌 **Real-time Income & Expense Tracking**
+- 💡 **Detail Destinasi** with timestamps and categories
+- 📊 **Destination Search** displaying total income and expenses
+- 📱 **Responsive Design** for mobile and desktop usage
+
+## Implementation Highlights
+
+- Integrated Firebase Authentication for secure user sessions.
+- Used Firebase Realtime Database to store and update financial records instantly.
+- Styled the interface using Tailwind CSS for clean and responsive layouts.
+- Built reusable React components with TypeScript for scalable development.
+- Deployed via Vercel for optimal performance.
+
+## Future Enhancements
+
+## Conclusion
+
+Building **Tourist Information System** A web-based application designed to provide comprehensive information about tourist attractions in Batu City, East Java. This application allows users to search.
+
+🛠️ View the code on [GitHub](https://github.com/IksanArifki27/destinasi_batu)
+
+Thanks for checking out my project!

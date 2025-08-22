@@ -1,0 +1,87 @@
+import Banner from '/public/assets/projects/idp.png';
+import { ContentLayout } from '@components/layout/content-layout';
+import { getContentSlug } from '@lib/mdx';
+
+export const meta = {
+  title: 'Internet Provider Management',
+  publishedAt: '2023-05-08',
+  banner: Banner,
+  description:
+    'Internet Provider Management Information System is a web-based application designed to assist internet service providers in managing various aspects of their operations.',
+  tags: 'laravel,mysql,javascript,bootstrap',
+  category: 'Personal Project',
+  github: 'https://github.com/IksanArifki27/IDPLAY-V2'
+};
+
+export const getStaticProps = getContentSlug('projects', 'idplay');
+
+export default ({ children }) => (
+  <ContentLayout meta={meta}>{children}</ContentLayout>
+);
+
+{/* content start */}
+
+## Overview
+
+**Internet Provider Management** Internet Provider Management Information System is a web-based application designed to assist internet service providers in managing various aspects of their operations. This application enables service providers to monitor customers, manage service packages, billing, and provide more efficient technical support..
+
+<div className='flex flex-wrap gap-2'>
+  <img
+    src='https://img.shields.io/badge/Laravel-%23FF2D20.svg?logo=laravel&logoColor=white'
+    alt='Laravel'
+  />
+  <img
+    src='https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=fff'
+    alt='Bootstrap'
+  />
+  <img
+    src='https://img.shields.io/badge/Postman-FF6C37?logo=postman&logoColor=white'
+    alt='Postman'
+  />
+  <img
+    src='https://img.shields.io/badge/jQuery-0769AD?logo=jquery&logoColor=fff'
+    alt='Jquery'
+  />
+  <img
+    src='https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000'
+    alt='Javascript'
+  />
+</div>
+
+## The Tech Stack
+
+This application was built using:
+
+- **Laravel** for Framework building the application system
+- **Mysql** for static database system
+- **Bootstrap** for rapid styling and responsiveness
+- **Postman** for Cheking end point API
+- **Jquery** for makes it easier to manipulate the DOM
+
+## Features
+
+- 💻 **Customer Data Management** to showcase projects
+- 📱 **Responsive Design** to work across various screen sizes
+- 🖥️ **Service Package Management** for customizable viewing experiences
+- ⚡ **Fast Performance** powered by Vite for quick load times
+- 👥 **Customer Support Provides a ticketing system** for easy extensibility
+- 🔐 **User Authentication** (Sign Up & Sign In)
+
+## Implementation Highlights
+
+- Built a retro terminal-style UI using styled-components for a clean design.
+- Implemented Vite for fast and optimized development and build processes.
+- Used TypeScript for type safety and improved maintainability.
+- Designed the portfolio to be interactive with clear instructions for users to navigate.
+
+## Future Enhancements
+
+- 🔄 Adding animations for smoother transitions between commands
+
+## Conclusion
+
+**Internet Provider Management Information System** is a web-based application designed to assist internet service providers in managing various aspects of their operations. This application enables service providers to monitor customers, manage service packages, billing, and provide more efficient technical support...
+
+🛠️ View the code on [GitHub](https://github.com/IksanArifki27/IDPLAY-V2)
+
+Thanks for exploring this project!
