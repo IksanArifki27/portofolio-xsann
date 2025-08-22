@@ -5,9 +5,9 @@ import { setTransition } from '@lib/transition';
 import { formatDate } from '@lib/format';
 import { components } from '@components/content/mdx-components';
 import { SEO } from '@components/common/seo';
-import { BlogCard } from '@components/blog/blog-card';
+
 import { ProjectCard } from '@components/project/project-card';
-import { BlogStats } from '@components/blog/blog-stats';
+
 import { ImagePreview } from '@components/modal/image-preview';
 import { ProjectStats } from '@components/project/project-stats';
 import { TableOfContents } from '@components/content/table-of-contents';
