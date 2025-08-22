@@ -76,13 +76,6 @@ export function ContentLayout({
             </UnstyledLink>
           </div>
         )}
-        <section className='mt-4 grid gap-2'>
-          {contentIsBlog ? (
-            <BlogStats slug={slug} readTime={readTime} increment />
-          ) : (
-            <ProjectStats slug={slug} readTime={readTime} increment {...meta} />
-          )}
-        </section>
       </section>
       <hr className='mt-4 dark:border-gray-600' />
       <section className='mt-4 grid gap-8 lg:grid-cols-[auto,1fr]'>
@@ -93,27 +86,6 @@ export function ContentLayout({
           <LikesCounter slug={slug} />
         </TableOfContents>
       </section>
-      <section className='mt-20 grid gap-4'>
-        <h2 className='text-2xl font-bold md:text-4xl'>
-          <Accent>Other {contentIsBlog ? 'posts' : type} you might like</Accent>
-        </h2>
-        <section className='card-layout'>
-          {contentIsBlog
-            ? (suggestedContents as Blog[]).map((suggestedContent, index) => (
-                <BlogCard {...suggestedContent} key={index} />
-              ))
-            : (suggestedContents as Project[]).map(
-                (suggestedContent, index) => (
-                  <ProjectCard {...suggestedContent} key={index} />
-                )
-              )}
-        </section>
-      </section>
-      {/* {contentIsBlog && (
-        <section className='mt-12'>
-          <SubscribeCard />
-        </section>
-      )} */}
       <section className='mt-8 flex justify-between font-medium'>
         <CustomLink href={`/${type}`}>← Back to {type}</CustomLink>
         {/* <CustomLink href={githubContentUrl}>Edit this on GitHub</CustomLink> */}
