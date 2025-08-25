@@ -5,16 +5,10 @@ import { setTransition } from '@lib/transition';
 import { formatDate } from '@lib/format';
 import { components } from '@components/content/mdx-components';
 import { SEO } from '@components/common/seo';
-
-import { ProjectCard } from '@components/project/project-card';
-
 import { ImagePreview } from '@components/modal/image-preview';
-import { ProjectStats } from '@components/project/project-stats';
 import { TableOfContents } from '@components/content/table-of-contents';
 import { UnstyledLink } from '@components/link/unstyled-link';
 import { CustomLink } from '@components/link/custom-link';
-import { LikesCounter } from '@components/content/likes-counter';
-import { Accent } from '@components/ui/accent';
 import type { ReactElement } from 'react';
 import type { Blog, Project, Content } from '@lib/types/contents';
 import type { ContentSlugProps } from '@lib/mdx';
@@ -36,13 +30,8 @@ export function ContentLayout({
 }: ContentLayoutProps): JSX.Element {
   const [
     { title, description, publishedAt, banner, bannerAlt, bannerLink, tags },
-    { type, slug, readTime, lastUpdatedAt, suggestedContents }
+    { type, lastUpdatedAt }
   ] = [meta, children.props];
-
-  const contentIsBlog = type === 'blog';
-
-  // const githubCommitHistoryUrl = `https://github.com/mamskie/portofolio/commits/main/src/pages/${type}/${slug}.mdx`;
-  // const githubContentUrl = `https://github.com/mamskie/portofolio/blob/main/src/pages/${type}/${slug}.mdx`;
 
   const article: Article = {
     type,
@@ -82,9 +71,7 @@ export function ContentLayout({
         <article id='mdx-article' className='prose max-w-4xl dark:prose-invert'>
           <MDXProvider components={components}>{children}</MDXProvider>
         </article>
-        <TableOfContents>
-          <LikesCounter slug={slug} />
-        </TableOfContents>
+        <TableOfContents></TableOfContents>
       </section>
       <section className='mt-8 flex justify-between font-medium'>
         <CustomLink href={`/${type}`}>← Back to {type}</CustomLink>

@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { useTheme } from 'next-themes';
 import { clsx } from 'clsx';
-import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { setTransition } from '@lib/transition';
 import { SEO } from '@components/common/seo';

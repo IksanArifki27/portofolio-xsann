@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://mamskie.me/projects</loc><lastmod>2025-08-04T16:21:24.369Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://mamskie.me/projects/finance-management</loc><lastmod>2025-08-04T16:21:24.371Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://mamskie.me</loc><lastmod>2025-08-25T06:09:22.985Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://mamskie.me/about</loc><lastmod>2025-08-25T06:09:22.986Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://mamskie.me/blog/custom-layout-in-nextjs</loc><lastmod>2025-08-25T06:09:22.986Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://mamskie.me/blog/data-fetching-in-nextjs</loc><lastmod>2025-08-25T06:09:22.986Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://mamskie.me/blog/hello-world</loc><lastmod>2025-08-25T06:09:22.986Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://mamskie.me/design</loc><lastmod>2025-08-25T06:09:22.986Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://mamskie.me/projects</loc><lastmod>2025-08-25T06:09:22.986Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://mamskie.me/projects/idplay</loc><lastmod>2025-08-25T06:09:22.986Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://mamskie.me/projects/sioktig</loc><lastmod>2025-08-25T06:09:22.986Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://mamskie.me/projects/web-travel</loc><lastmod>2025-08-25T06:09:22.986Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 </urlset>

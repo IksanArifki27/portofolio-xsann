@@ -1,7 +1,6 @@
 import { IoLogoVercel } from 'react-icons/io5';
 import {
   SiGit,
-  SiSass,
   SiReact,
   SiNotion,
   SiMongodb,

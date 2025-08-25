@@ -1,12 +1,10 @@
 import { motion } from 'framer-motion';
 import {
-  SiFirebase,
   SiLaravel,
   SiTypescript,
   SiTailwindcss,
   SiReact,
   SiMysql,
-  SiPython,
   SiGit,
   SiPostman,
   SiJavascript,
@@ -80,10 +78,10 @@ export default function About(): JSX.Element {
             <p>
               I enjoy working on information technology-based projects, such as
               when I created an information system and device monitoring to
-              analyze quality changes. I'm always eager to learn, build, and
-              collaborate. This site is where I showcase my work, share
-              insights, and reflect on what I've learned. Feel free to contact
-              me if you'd like to connect or collaborate!
+              analyze quality changes. I&apos;m always eager to learn, build,
+              and collaborate. This site is where I showcase my work, share
+              insights, and reflect on what I&apos;ve learned. Feel free to
+              contact me if you&apos;d like to connect or collaborate!
             </p>
           </motion.article>
           <motion.div
@@ -262,8 +260,8 @@ export default function About(): JSX.Element {
                           support digital .
                         </li>
                         <li>
-                          involved in the development of the company's internal
-                          information systems
+                          involved in the development of the company&apos;s
+                          internal information systems
                         </li>
                       </ul>
                     </div>
