@@ -8,7 +8,6 @@ import {
 } from 'react-icons/si';
 import { Tooltip } from '@components/ui/tooltip';
 import { UnstyledLink } from '@components/link/unstyled-link';
-import { SpotifyCard } from '@components/common/spotify-card';
 import type { IconType } from 'react-icons';
 
 export function Footer(): JSX.Element {
@@ -30,9 +29,7 @@ export function Footer(): JSX.Element {
           </Tooltip>
         ))}
       </nav>
-      <section className='grid justify-items-center'>
-        <SpotifyCard />
-      </section>
+      <section className='grid justify-items-center'></section>
       <section className='grid justify-items-center gap-2 text-gray-600 dark:text-gray-300'>
         <h2 className='font-medium'>Reach me out</h2>
         <section className='flex gap-4'>
@@ -88,11 +85,6 @@ const footerLinks: FooterLink[] = [
     name: 'Design',
     href: '/design',
     tip: 'iksan arifki color palette'
-  },
-  {
-    name: 'Statistics',
-    href: '/statistics',
-    tip: 'Blog & Projects statistics'
   }
 ];
 
