@@ -74,7 +74,7 @@ type FooterLink = {
 const footerLinks: FooterLink[] = [
   {
     name: 'Source code',
-    href: 'https://github.com/',
+    href: 'https://github.com/IksanArifki27/portofolio-xsann',
     tip: (
       <>
         This website is <strong>open source!</strong>
@@ -99,13 +99,13 @@ const socialLinks: SocialLink[] = [
   {
     tip: 'Contact me at',
     name: 'm.iksanarifki@gmail.com',
-    href: 'm.iksanarifki@gmail.com',
+    href: 'mailto:m.iksanarifki@gmail.com',
     Icon: HiEnvelope
   },
   {
     tip: "I'm also on",
     name: 'Discord',
-    href: 'https://discord.com/',
+    href: 'https://discord.com/users/466967480997249024',
     Icon: SiDiscord
   },
   {

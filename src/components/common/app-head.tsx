@@ -19,7 +19,7 @@ export function AppHead(): JSX.Element {
           name='description'
           content='An online portfolio and blog by M. Iksan Arifki projects, skills in Information Systems, and insights in tech, audit, and risk management.'
         />
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href='/icon.png' />
         <link rel='manifest' href='/site.webmanifest' key='site-manifest' />
         <link rel='canonical' href={ogUrl} />
       </Head>

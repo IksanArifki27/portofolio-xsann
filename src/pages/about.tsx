@@ -241,9 +241,52 @@ export default function About(): JSX.Element {
                   >
                     <div>
                       <h3 className='text-lg font-semibold'>
+                        <CustomLink href='https://www.telkomsigma.co.id/id/home/'>
+                          {' '}
+                          PT. Sigma Cipta Caraka
+                        </CustomLink>
+                      </h3>
+                      <p className='text-sm text-muted'>
+                        Aug 2025 – Now · Surabaya, Indonesia
+                      </p>
+                      <ul className='list-disc pl-5 mt-1 text-base'>
+                        <li>
+                          Contribute to Monitoring and Analysis of data centers
+                        </li>
+
+                        <li>Perform Backup and Disaster Recovery on servers</li>
+                        <li>
+                          Document all procedures, configurations, and changes
+                          made to the system.
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h3 className='text-lg font-semibold'>
+                        <CustomLink href='https://rsmmcsby.co.id/'>
+                          {' '}
+                          PT. Besturi Delta Medika
+                        </CustomLink>
+                      </h3>
+                      <p className='text-sm text-muted'>
+                        Mei 2025 – Jul 2025 · Surabaya, Indonesia
+                      </p>
+                      <ul className='list-disc pl-5 mt-1 text-base'>
+                        <li>
+                          Contribute to the design and development of designs
+                        </li>
+
+                        <li>
+                          Contribute to building Credibility and Authority
+                        </li>
+                        <li>Analyze and collect data to Increase Visibility</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h3 className='text-lg font-semibold'>
                         <CustomLink href='https://www.interbat.co.id/'>
                           {' '}
-                          PT Interbat
+                          PT. Interbat
                         </CustomLink>
                       </h3>
                       <p className='text-sm text-muted'>
@@ -269,7 +312,7 @@ export default function About(): JSX.Element {
                       <h3 className='text-lg font-semibold'>
                         <CustomLink href='https://kursuskomputerpalingdiminatidisurabaya.wordpress.com/'>
                           {' '}
-                          CV Isokativ Indonesia
+                          CV. Isokativ Indonesia
                         </CustomLink>
                       </h3>
                       <p className='text-sm text-muted'>
@@ -350,7 +393,7 @@ export default function About(): JSX.Element {
                           {' '}
                           BNSP LSP TIK{' '}
                         </CustomLink>
-                        2024
+                        2025
                       </li>
                       <li>
                         Frontend Developer Junior –{' '}
@@ -358,7 +401,7 @@ export default function About(): JSX.Element {
                           {' '}
                           Dicoding{' '}
                         </CustomLink>
-                        2023
+                        2024
                       </li>
                       <li>
                         Revou Digital Marketing Junior –{' '}

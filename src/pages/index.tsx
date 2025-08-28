@@ -49,7 +49,7 @@ export default function Home({
         >
           I&apos;m a developer and IT enthusiast with professional experience in
           information technology management, web development, and network
-          infrastructure and data center management. With a strong technical
+          infrastructure system administrator. With a strong technical
           background and a deep understanding of modern IT systems, I am
           accustomed to managing IT projects from both a technical and strategic
           perspective. I keep up with the latest technological developments and
